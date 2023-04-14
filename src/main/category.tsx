@@ -11,7 +11,7 @@ const Category = () => {
 export default Category 
 
 const Section = styled.section`
-  background-color:pink;
+  /* background-color:pink; */
   height:400px;
   div{
     padding:0 20%;

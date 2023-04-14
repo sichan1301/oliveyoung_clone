@@ -5,46 +5,44 @@ import CategoryList from "./categoryList"
 const Navbar = () => {
   return(
     <Navigation>
-      <ul>
+      <Ul>
         <li>
-          <>
-            <p>카테고리</p> 
-            <CategoryList />
-          </>
+          <a href="">카테고리</a>
+          <CategoryList />
         </li>
-        <li>오특</li>
-        <li>신상</li>
-        <li>랭킹</li>
-        <li>프리미엄관</li>
-        <li>기획전</li>
-        <li>세일</li>
-        <li>기프트카드</li>
-        <li>멤버십/쿠폰</li>
-        <li>이벤트</li>
-      </ul>
+        <li><a href="">오특</a></li>
+        <li><a href="">신상</a></li>
+        <li><a href="">랭킹</a></li>
+        <li><a href="">프리미엄관</a></li>
+        <li><a href="">기획전</a></li>
+        <li><a href="">세일</a></li>
+        <li><a href="">기프트카드</a></li>
+        <li><a href="">멤버십/쿠폰</a></li>
+        <li><a href="">이벤트</a></li>
+      </Ul>
     </Navigation>
   )
 }
-
 
 export default Navbar 
 
 
 const Navigation = styled.nav`
-  width:100%;
-  border-top:0.5px solid grey;
-  border-bottom:0.5px solid grey;
-  ul{
-    padding:0;
-    margin:0 auto;
-    width:70%;
-    height:50px;
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-  }
+  padding: 0 20%;
+  background-color:#fff;
+  margin:0.5px auto;
+  height:50px;
+`
+
+const Ul = styled.ul`
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  padding:0;
+  margin:0;
+
   li{
-    list-style:none;
     font-weight:600;
     font-size:18px;
     text-align:center;

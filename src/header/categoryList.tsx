@@ -25,16 +25,13 @@ const CategoryList = () => {
 export default CategoryList
 const CategoryUl = styled.ul`
   position:absolute;
+  padding:0;
   display:flex;
   flex-direction:column;
-  transform:translate(0,450%);
-  bottom:0;
+  top:50px;
   left:0;
   right:0;
   li{
-    list-style:none;
-    margin-bottom:4px;
-    cursor:pointer;
-    color:black;
+    margin-bottom:14px;
   }
 `

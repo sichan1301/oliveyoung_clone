@@ -5,14 +5,19 @@ import TopMenu from "./topMenu"
 
 const Header = () => {
   return(
-    <>
+    <Container>
       <TopMenu />
       <Main />
       <Navbar />
-    </>
+    </Container>
   )
 }
 
 
 export default Header 
+
+const Container = styled.header`
+  background-color:black;
+  padding-bottom:0.5px;
+`
 

@@ -2,27 +2,29 @@ import styled from "styled-components"
 
 const TopMenu = () => {
   return(
-    <TopMenuUl>
-      <li>회원가입</li>
-      <li>로그인</li>
-      <li>장바구니</li>
-      <li>주문배송</li>
-      <li>고객센터</li>
-      <li>매장안내</li>
-      <li>Global</li>
-    </TopMenuUl>
+    <Ul>
+      <li><a href="">회원가입</a></li>
+      <li><a href="">로그인</a></li>
+      <li><a href="">장바구니</a></li>
+      <li><a href="">주문배송</a></li>
+      <li><a href="">고객센터</a></li>
+      <li><a href="">매장안내</a></li>
+      <li><a href="">Global</a></li>
+    </Ul>
   )
 }
 
 export default TopMenu
 
 
-const TopMenuUl = styled.ul`
-  padding:0 20%;
+const Ul = styled.ul`
+  background-color:#fff;
+  padding:10px 20%;
+  margin:0;
   text-align:right;
   li{
+    font-size:14px;
     display:inline;
     margin-right:10px;
-    cursor:pointer;
   }
 `
