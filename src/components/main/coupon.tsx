@@ -9,9 +9,6 @@ const Coupon = () => {
       <CouponDiv2>
         <p>탑리뷰어 대상 할인쿠폰 지급!</p>
       </CouponDiv2>
-
-        {/* <img src ={require('../imgs/free.jpg')} /> */}
-    
     </Section>
   )
 }
@@ -21,15 +18,15 @@ export default Coupon
 
 const Section = styled.section`
   padding:0 20%;
-  display:flex; 
-  justify-content:space-between;
   margin:30px 0;
 `
 
 const CouponDiv1 = styled.div`
+    display:inline-block;
     background-color:pink;
-    width:49.9%;
+    width:49.5%;
     padding:10px 0;
+    transform:translate(0,0);
     cursor:pointer;
   p{
     font-size:28px;
@@ -39,5 +36,6 @@ const CouponDiv1 = styled.div`
 `
 
 const CouponDiv2 = styled(CouponDiv1)`
+  transform:translate(2%,0);
   background-color:rgb(206, 224, 250);
 `

@@ -3,6 +3,7 @@ import Category from "./category"
 import Coupon from "./coupon"
 import Recommend from "./recommend"
 import WeeklySpecial from "./weeklySpecial"
+import PopularEvent from "./popularEvent"
 
 const Main = () => {
   return(
@@ -11,6 +12,7 @@ const Main = () => {
       <Coupon />
       <Recommend />
       <WeeklySpecial />
+      <PopularEvent />
     </>
   )
 }

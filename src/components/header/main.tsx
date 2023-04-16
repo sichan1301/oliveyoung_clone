@@ -4,7 +4,7 @@ const Main = () => {
   return(
     <MainDiv>
       <MainLogo>
-        <a href =""><img src={require('../imgs/cost.jpg')} /></a>
+        <a href =""><img src={require('../../imgs/cost.jpg')} /></a>
       </MainLogo>
    
       <SearchBar />
@@ -49,7 +49,7 @@ const MenuListUl = styled.ul`
   padding:0;
   li{
     display:inline;
-    font-size:18px;
+    font-size:16px;
     margin-left:15px;
   }
 `

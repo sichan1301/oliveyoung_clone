@@ -24,14 +24,20 @@ const CategoryList = () => {
 
 export default CategoryList
 const CategoryUl = styled.ul`
+  background-color: rgba(78, 78, 78, 0.5);
   position:absolute;
-  padding:0;
+  top:50px; //navbar height
+  left:20%;
+  right:calc(80%-130px);
+  margin:0;
+  width:130px;
+  padding:10px;
   display:flex;
   flex-direction:column;
-  top:50px;
-  left:0;
-  right:0;
+  align-items: start;
   li{
-    margin-bottom:14px;
+    color:#fff;
+    font-size:14px;
+    margin-bottom:10px;
   }
 `
