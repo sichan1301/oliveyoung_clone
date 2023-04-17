@@ -17,7 +17,7 @@ export default WeeklySpecial
 
 const Section = styled.section`
   padding:0 20%;
-  margin:0;
+  margin-bottom:100px;
 `
 
 const ContentDiv = styled.div`

@@ -26,14 +26,15 @@ const Product = () => {
 export default Product
 
 const Container = styled.div`
+  width:100%;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor:pointer;
   img{
-    width:200px;
-    height:200px;
+    width:100%;
+    height:100%;
     border:0.5px solid grey;
   }
 `

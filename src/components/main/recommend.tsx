@@ -16,9 +16,7 @@ const Recommend = () => {
           <Product />
         </ProductDiv>
 
-        <button>
-          다른상품 추천해드릴게요 1 | 5 
-        </button>
+        <AnotherRecmmend>다른상품 추천해드릴게요 1 | 5</AnotherRecmmend>
       </Content>
 
       <Content>
@@ -32,7 +30,7 @@ const Recommend = () => {
           <Product />
         </ProductDiv>
 
-        <button>다른상품 추천해드릴게요 1 | 5</button>
+        <AnotherRecmmend>다른상품 추천해드릴게요 1 | 5</AnotherRecmmend>
 
       </Content>
 
@@ -45,21 +43,16 @@ export default Recommend
 
 const Section = styled.section`
   width:60%;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   display:flex;
-  /* background-color: rgb(116, 114, 114); */
+  gap:1px;
+  background-color: rgb(212, 212, 212);
 `
 
 const Content = styled.div`  
-  width:49.9%;
+  width:50%;
   padding:10px;
-
-  button{
-    display:block;
-    width:300px;
-    height:40px;
-    margin:0 auto;
-  }
+  background-color:#fff;
 `
 
 const TextDiv = styled.div`
@@ -70,11 +63,9 @@ const TextDiv = styled.div`
   padding:10px;
   margin:0 0 18px 0;
   h2{
-    font-size:20px;
+    font-size:24px;
     font-weight:800;
-    padding-left:20px;
-    height:50px;
-    padding:0;
+    padding-left:10px;
     margin:0;
   }
   span{
@@ -86,6 +77,15 @@ const TextDiv = styled.div`
 `
  export const ProductDiv = styled.div`
   display:flex;
-  justify-content: space-between;
-  margin: 0 0 16px 0;
+  flex-wrap:nowrap;
+  height:400px;
+  gap:10px;
+  margin: 0 0 60px 0;
+ `
+
+ const AnotherRecmmend = styled.button`
+    display:block;
+    width:300px;
+    height:40px;
+    margin:0 auto;
  `
