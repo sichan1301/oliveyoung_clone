@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Main from "./main"
+import Main from "./mainContent"
 import Navbar from "./navbar"
 import TopMenu from "./topMenu"
 

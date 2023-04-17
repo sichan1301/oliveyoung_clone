@@ -28,7 +28,6 @@ const Content1 = styled.div`
   width:49%;
   height:200px;
   background-color: rgb(201, 190, 250);
-  padding:0;
   cursor:pointer;
 `
 

@@ -25,6 +25,6 @@ const Ul = styled.ul`
   li{
     font-size:14px;
     display:inline;
-    margin-right:10px;
+    margin-left:10px;
   }
 `

@@ -47,18 +47,17 @@ const Box1 = styled.div`
   height:300px;
 `
 
-const Box2 = styled.div`
+const Box2 = styled(Box1)`
   background-color:rgb(251, 215, 196);
-  height:300px;
 `
 
 const ProductDiv = styled.div`
-  transform:translateY(-10%);
-  width:90%;
-  background-color:#fff;
+  transform:translateY(-15%);
   display:grid;
-  margin:0 auto;
-  padding:20px;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap:20px;
+  grid-gap:15px;
+  width:95%;
+  margin:0 auto;
+  padding:10px;
+  background-color:#fff;
 `

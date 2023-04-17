@@ -19,7 +19,7 @@ const CatchKeyword = () => {
         </Content>
       </ContentDiv>
 
-      <AnotherKeyword>다른 키워드 더보기</AnotherKeyword>
+      <AnotherKeyword>다른 키워드 더보기 1 | 5</AnotherKeyword>
     </Section>
   )
 }
@@ -35,27 +35,25 @@ const Section = styled.section`
   margin-bottom:100px;
 `
 
+const ContentDiv = styled.div`
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:50px;
+  `
+
+const Content = styled.div`
+  width:49%;  
+`
+  
 const Box1 = styled.div`
   background-color:rgb(177, 239, 254);
   height:300px;
   border-radius:10px;
 `
 
-const ContentDiv = styled.div`
-  display:flex;
-  justify-content:space-between;
-  margin-bottom:50px;
-`
 
-const Content = styled.div`
-  width:49%;  
-`
-
-
-const Box2 = styled.div`
-  border-radius:10px;
+const Box2 = styled(Box1)`
   background-color:rgb(254, 233, 177);
-  height:300px;
 `
 
 const Title = styled.p`

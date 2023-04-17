@@ -3,10 +3,8 @@ import styled from "styled-components"
 const Main = () => {
   return(
     <MainDiv>
-      <MainLogo>
-        <a href =""><img src={require('../../imgs/cost.jpg')} /></a>
-      </MainLogo>
-   
+      <a href =""><Img src={require('../../imgs/cost.jpg')} /></a>
+
       <SearchBar />
 
       <MenuListUl>
@@ -28,15 +26,10 @@ const MainDiv = styled.div`
   align-items:center;
 `
 
-const MainLogo = styled.div`
-  padding-bottom:15px;
-  width:300px;
+const Img = styled.img`
+  width:250px;
   height:100px;
-  img{
-    width:100%;
-    height:100%;
-  }
-  `
+`
 
 const SearchBar = styled.input`
   width:300px;

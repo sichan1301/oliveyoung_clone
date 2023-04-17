@@ -45,12 +45,8 @@ const Ul = styled.ul`
     font-weight:600;
     font-size:18px;
     text-align:center;
-    cursor:pointer;
     :first-child{
       width:130px;
-      display:flex;
-      flex-direction:column;
-      align-items: start;
     }
   }
 `

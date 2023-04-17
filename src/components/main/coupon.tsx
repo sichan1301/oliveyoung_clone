@@ -17,25 +17,31 @@ export default Coupon
 
 
 const Section = styled.section`
+  position:relative;
   padding:0 20%;
-  margin:30px 0;
+  margin:50px 0;
+  height:100px;
 `
 
 const CouponDiv1 = styled.div`
-    display:inline-block;
-    background-color:pink;
-    width:49.5%;
-    padding:10px 0;
-    transform:translate(0,0);
-    cursor:pointer;
-  p{
-    font-size:28px;
-    font-weight:700;
-    text-align:center;
-  }
+  position:absolute;
+  top:0;
+  left:20%;
+  right:50.5%;
+  bottom:0;
+  background-color:pink;
+  cursor:pointer;
+p{
+  margin:0;
+  line-height:100px;
+  font-size:28px;
+  font-weight:700;
+  text-align:center;
+}
 `
 
 const CouponDiv2 = styled(CouponDiv1)`
-  transform:translate(2%,0);
+  right:20%;
+  left:50.5%;
   background-color:rgb(206, 224, 250);
 `
