@@ -3,6 +3,7 @@ import styled from "styled-components"
 const MainContent = () => {
   return(
     <Container>
+      
       <LeftMenuDiv>
         <Img src ={require('../../imgs/cost.jpg')} />
         <LeftMenuUl>

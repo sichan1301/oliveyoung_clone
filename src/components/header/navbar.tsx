@@ -23,7 +23,6 @@ export default Navbar
 
 
 const Navigation = styled.nav`
-  position:relative;
   padding: 0 20%;
   background-color:#fff;
   margin:0.5px auto;
@@ -45,7 +44,7 @@ const Ul = styled.ul`
     text-align:center;
     height:100%;
     :first-child{
-      width:200px;
+      width:160px;
       border-left:0.5px solid rgb(190, 190, 190);
       border-right:0.5px solid rgb(190, 190, 190);
     }

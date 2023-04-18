@@ -13,7 +13,7 @@ const OnlyOliveYoung = () => {
       </TopDiv>
 
       <ContentDiv>
-        <Content type="first" />
+        <Content type="first"/>
         <Content type="second"/>
         <Content type="third" />
       </ContentDiv>

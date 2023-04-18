@@ -36,13 +36,11 @@ const BackgroundDiv = styled.div`
 const CategoryUl = styled.ul`
   background-color: rgba(78, 78, 78, 0.5);
   position:absolute;
-  top:0; 
-  bottom:0;
-  left:20%;
-  right:calc(80%-200px); // 카테고리 width 값
-  width:200px;
+  width:160px;
+  height: 100%;
   padding:10px;
-  margin:0;
+  margin: 0;
+  left:20%;
   li{
     padding-left:20px;
     font-size:15px;

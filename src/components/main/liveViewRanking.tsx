@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { ProductDiv,ProductSubTitle,PriceDiv,TagPrice,DiscountPrice,Keyword } from "../product"
+import Product, { ProductDiv,ProductSubTitle,PriceDiv,TagPrice,DiscountPrice,Keyword } from "../product"
 import { TextDiv } from "./worthyBrand"
 import { TopDiv,TabDiv } from "./onlyOvlieyoung"
 
@@ -16,24 +16,7 @@ const LiveViewRanking = () => {
 
       <ContentDiv>
         
-        <NewProductDiv>
-          <img src = {require('../../imgs/cost.jpg')} />
-          <TextDiv>
-            <ProductSubTitle>아토팜 세탁세제 1000ml</ProductSubTitle>
-
-            <PriceDiv>
-              <TagPrice>13,000원</TagPrice>
-              <DiscountPrice>9,360원</DiscountPrice>
-            </PriceDiv>
-
-            <div>
-              <Keyword type="세일">세일</Keyword>
-              <Keyword type="쿠폰">쿠폰</Keyword>
-              <Keyword type="증정">증정</Keyword>
-              <Keyword type="오늘드림">오늘드림</Keyword>
-            </div>
-          </TextDiv>
-        </NewProductDiv>
+        <Product flexRow productWidth="50%" imgWidth="40%"/>
         
 
         <Ul>
@@ -52,13 +35,10 @@ const LiveViewRanking = () => {
 
 export default LiveViewRanking
 
-
 const Section = styled.section`
   padding:0 20%;
   margin-bottom:100px;
 `
-
-
 
 const ContentDiv = styled.div`
   display:flex;

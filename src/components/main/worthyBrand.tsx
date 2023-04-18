@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { Section } from "./weeklySpecial"
+import Product from "../product"
 import { ProductDiv ,ProductSubTitle,PriceDiv,TagPrice,DiscountPrice,Keyword } from "../product"
 
 const WorthyBrand = () => {
@@ -21,45 +22,8 @@ const WorthyBrand = () => {
       <Carousel />
 
       <ProductContent>
-
-        <NewProductDiv>
-          <img src = {require('../../imgs/cost.jpg')} />
-          <TextDiv>
-            <ProductSubTitle>아토팜 세탁세제 1000ml</ProductSubTitle>
-
-            <PriceDiv>
-              <TagPrice>13,000원</TagPrice>
-              <DiscountPrice>9,360원</DiscountPrice>
-            </PriceDiv>
-
-            <div>
-              <Keyword type="세일">세일</Keyword>
-              <Keyword type="쿠폰">쿠폰</Keyword>
-              <Keyword type="증정">증정</Keyword>
-              <Keyword type="오늘드림">오늘드림</Keyword>
-            </div>
-          </TextDiv>
-        </NewProductDiv>
-
-        <NewProductDiv>
-          <img src = {require('../../imgs/cost.jpg')} />
-          <TextDiv>
-            <ProductSubTitle>아토팜 세탁세제 1000ml</ProductSubTitle>
-
-            <PriceDiv>
-              <TagPrice>13,000원</TagPrice>
-              <DiscountPrice>9,360원</DiscountPrice>
-            </PriceDiv>
-
-            <div>
-              <Keyword type="세일">세일</Keyword>
-              <Keyword type="쿠폰">쿠폰</Keyword>
-              <Keyword type="증정">증정</Keyword>
-              <Keyword type="오늘드림">오늘드림</Keyword>
-            </div>
-          </TextDiv>
-        </NewProductDiv>
-
+        <Product flexRow imgWidth="50%"/>
+        <Product flexRow imgWidth="50%"/>
       </ProductContent>
     </Section>
   )

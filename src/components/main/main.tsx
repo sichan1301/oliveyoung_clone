@@ -1,4 +1,3 @@
-import styled from "styled-components"
 import Category from "./categoryMenu"
 import Coupon from "./coupon"
 import Recommend from "./recommend"

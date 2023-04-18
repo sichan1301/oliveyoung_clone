@@ -1,8 +1,14 @@
 import styled from "styled-components"
 
-const Product = () => {
+interface ProductProps {
+  flexRow?:boolean,
+  imgWidth?:string,
+  productWidth?:string
+}
+
+const Product = ({flexRow,imgWidth,productWidth}:ProductProps) => {
   return (
-    <ProductDiv>
+    <ProductDiv flexRow ={flexRow} imgWidth = {imgWidth}>
       <img src = "/imgs/cost.jpg" />
       <ProductTitle>아토팜</ProductTitle>
       <ProductSubTitle>아토팜 세탁세제 1000ml</ProductSubTitle>
@@ -13,10 +19,10 @@ const Product = () => {
       </PriceDiv>
 
       <div>
-        <Keyword type="세일">세일</Keyword>
-        <Keyword type="쿠폰">쿠폰</Keyword>
-        <Keyword type="증정">증정</Keyword>
-        <Keyword type="오늘드림">오늘드림</Keyword>
+        <Keyword color="rgb(254, 101, 101)">세일</Keyword>
+        <Keyword color="rgb(154, 236, 67)">쿠폰</Keyword>
+        <Keyword color="rgb(121, 190, 243)">증정</Keyword>
+        <Keyword color="rgb(255, 159, 218)">오늘드림</Keyword>
       </div>
     </ProductDiv>
   )
@@ -25,15 +31,21 @@ const Product = () => {
 
 export default Product
 
-export const ProductDiv = styled.div`
-  width:100%;
+interface ProductDivProps {
+  flexRow ?: boolean,
+  productWidth?: string,
+  imgWidth ?:string
+}
+
+export const ProductDiv = styled.div<ProductDivProps>`
+  width:${props => props.productWidth ? props.productWidth : `100%`};
   display:flex;
-  flex-direction: column;
+  flex-direction:${props => props.flexRow ? `row` : `column`};
   justify-content: center;
   align-items: center;
   cursor:pointer;
   img{
-    width:100%;
+    width:${props => props.imgWidth ? props.imgWidth : `100%`};
     height:100%;
     border:0.5px solid grey;
   }
@@ -66,7 +78,7 @@ export const DiscountPrice = styled.span`
 `
 
 interface KeywordProps {
-  type:string
+  color:string
 }
 
 export const Keyword = styled.span<KeywordProps>`
@@ -74,18 +86,7 @@ export const Keyword = styled.span<KeywordProps>`
   font-size:12px;
   border-radius:10px;
   padding:1px 10px;
-  background-color:${props => {
-    switch(props.type) {
-      case "세일":
-        return `rgb(254, 101, 101)`;
-      case "쿠폰":
-        return `rgb(154, 236, 67)`;
-      case "증정":
-        return `rgb(121, 190, 243)`;
-      case "오늘드림":
-        return `rgb(255, 159, 218)`;
-    }
-  }}
+  background-color:${props => props.color};
 `
 
 
