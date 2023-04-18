@@ -3,10 +3,8 @@ import styled from "styled-components"
 const Main = () => {
   return(
     <MainDiv>
-      <a href =""><Img src={require('../../imgs/cost.jpg')} /></a>
-
+      <a href =""><Img src="/imgs/cost.jpg" /></a>
       <SearchBar />
-
       <MenuListUl>
         <li><a href ="">오늘드림</a></li>
         <li><a href ="">관심 매장소식</a></li>

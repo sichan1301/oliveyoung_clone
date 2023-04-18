@@ -16,16 +16,15 @@ const SubContent = () => {
   )
 }
 
-
-
 export default SubContent
 
 const Container = styled.div`
   display:flex;
   justify-content:space-between;
-  padding:0 20%;
-  height:20px;
-  border-top:0.5px solid rgb(231, 229, 229);
+  width:60%;
+  margin: 0 auto;
+  height:40px;
+  border-top:0.5px solid rgb(182, 179, 179);
 `
 
 const ContentDiv = styled.div`
@@ -34,10 +33,11 @@ const ContentDiv = styled.div`
   align-items:center;
 `
 const Img = styled.img`
-  width:20px;
-  height:100%;
+  width:30px;
+  height:30px;
 `
 
 const Text = styled.p`
-  font-size:8px;
+  font-size:10px;
+  margin-left:10px;
 `

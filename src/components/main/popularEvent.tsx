@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Product from "../product"
+import { Section } from "./weeklySpecial"
 
 const PopularEvent = () => {
   return(
@@ -31,10 +32,6 @@ const PopularEvent = () => {
 
 export default PopularEvent
 
-const Section = styled.section`
-  padding:0 20%;
-  margin-bottom:100px;
-`
 
 const ContentDiv = styled.div`
   display:grid;

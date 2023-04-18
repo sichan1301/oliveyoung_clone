@@ -7,10 +7,10 @@ const CopyRight = () => {
         <MainTxt>Copyright ⓒ CJ OliveYoung. All Rights Reserved.</MainTxt>
         <Ul>
           <p>Olive Young SNS</p>
-          <li>facebook</li>
-          <li>instagram</li>
-          <li>youtube</li>
-          <li>kakaotalk</li>
+          <li><img src ={require('../../imgs/free.jpg')} /></li>
+          <li><img src ={require('../../imgs/free.jpg')} /></li>
+          <li><img src ={require('../../imgs/free.jpg')} /></li>
+          <li><img src ={require('../../imgs/free.jpg')} /></li>
         </Ul>
       </ContentDiv>
     </Container>
@@ -21,7 +21,8 @@ const CopyRight = () => {
 export default CopyRight
 
 const Container = styled.div`
-  border-top:0.5px solid rgb(231, 229, 229);
+  padding:5px;
+  border-top:0.5px solid rgb(195, 193, 193);
 `
 const ContentDiv = styled.div`
   padding: 0 20%;
@@ -33,7 +34,7 @@ const ContentDiv = styled.div`
 const MainTxt = styled.p`
   margin:0;
   font-size:12px;
-  color:rgb(157, 156, 156)
+  color:rgb(157, 156, 156);
 `
 
 const Ul = styled.ul`
@@ -45,10 +46,10 @@ const Ul = styled.ul`
     font-size:12px;
     color:rgb(157, 156, 156);
   }
-  li{
-    font-size:12px;
-    margin-left:10px;
-    color:rgb(157, 156, 156);
+  img{
+    width:25px;
+    height:25px;
+    margin-left:12px;
   }
 
 `

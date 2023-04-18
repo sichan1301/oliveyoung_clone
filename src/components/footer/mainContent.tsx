@@ -47,14 +47,13 @@ const LeftMenuDiv = styled.div`
 `
 
 const Img = styled.img`
-  width:30%;
+  width:35%;
   height:100%;
 `
 const LeftMenuUl = styled.ul`
-  padding:20px;
-  width:70%;
+  width:65%;
   font-size:13px;
-  margin:30px 0 0 0;
+  margin:20PX;
   li{
     margin-bottom:5px;
     color:rgb(139, 138, 138);
@@ -66,7 +65,8 @@ const LeftMenuUl = styled.ul`
 
 
 const PolicyUl = styled(LeftMenuUl)`
-  padding:0 0 0 20px;
+  padding:0 20px;
+  margin:20px 0;
   width:25%;
   height:120px;
   border-left:0.5px solid rgb(231, 229, 229);
@@ -75,6 +75,7 @@ const PolicyUl = styled(LeftMenuUl)`
 
 const HanaBankDiv = styled(LeftMenuUl)`
   width:25%;
+  padding:0;
   li{
     margin-bottom:5px;
     color:rgb(139, 138, 138);

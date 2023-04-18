@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Section } from "./weeklySpecial"
 
 const OnlyOliveYoung = () => {
   return(
@@ -12,9 +13,9 @@ const OnlyOliveYoung = () => {
       </TopDiv>
 
       <ContentDiv>
-        <Content1 />
-        <Content2 />
-        <Content3 />
+        <Content type="first" />
+        <Content type="second"/>
+        <Content type="third" />
       </ContentDiv>
     </Section>
   )
@@ -22,13 +23,8 @@ const OnlyOliveYoung = () => {
 
 export default OnlyOliveYoung
 
-const Section = styled.section`
-  position:relative;
-  padding: 0 20%;
-  margin-bottom:100px;
-`
 
-const TopDiv = styled.div`
+export const TopDiv = styled.div`
   position:relative;
   height:40px;
   margin-bottom:20px;
@@ -41,7 +37,7 @@ const TopDiv = styled.div`
   }
 `
 
-const TabDiv = styled.div`
+export const TabDiv = styled.div`
   position:absolute;
   top:50%;
   right:0;
@@ -59,15 +55,22 @@ const TabDiv = styled.div`
 const ContentDiv = styled.div`
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  gap:10px;
+  grid-gap:10px;
   height:150px;
 `
-const Content1 = styled.div`
-  background-color:rgb(251, 190, 221);
-`
-const Content2 = styled.div`
-  background-color:rgb(208, 207, 207);
-`
-const Content3 = styled.div`
-  background-color:rgb(164, 191, 215);
+
+interface ContentProps {
+  type:string
+}
+const Content = styled.div<ContentProps>`
+  background-color:${props => {
+    switch(props.type) {
+      case "first":
+        return `rgb(251, 190, 221)`;
+      case "second":
+        return `rgb(208, 207, 207)`;
+      case "third":
+        return `rgb(164, 191, 215)`;
+    }
+  }}
 `

@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import Product from "../product"
+import { Section } from "./weeklySpecial"
+import { ProductDiv ,ProductSubTitle,PriceDiv,TagPrice,DiscountPrice,Keyword } from "../product"
 
 const WorthyBrand = () => {
   return(
@@ -21,10 +22,10 @@ const WorthyBrand = () => {
 
       <ProductContent>
 
-        <ProductDiv>
+        <NewProductDiv>
           <img src = {require('../../imgs/cost.jpg')} />
           <TextDiv>
-            <SubTitle>아토팜 세탁세제 1000ml</SubTitle>
+            <ProductSubTitle>아토팜 세탁세제 1000ml</ProductSubTitle>
 
             <PriceDiv>
               <TagPrice>13,000원</TagPrice>
@@ -38,12 +39,12 @@ const WorthyBrand = () => {
               <Keyword type="오늘드림">오늘드림</Keyword>
             </div>
           </TextDiv>
-        </ProductDiv>
+        </NewProductDiv>
 
-        <ProductDiv>
+        <NewProductDiv>
           <img src = {require('../../imgs/cost.jpg')} />
           <TextDiv>
-            <SubTitle>아토팜 세탁세제 1000ml</SubTitle>
+            <ProductSubTitle>아토팜 세탁세제 1000ml</ProductSubTitle>
 
             <PriceDiv>
               <TagPrice>13,000원</TagPrice>
@@ -57,7 +58,7 @@ const WorthyBrand = () => {
               <Keyword type="오늘드림">오늘드림</Keyword>
             </div>
           </TextDiv>
-        </ProductDiv>
+        </NewProductDiv>
 
       </ProductContent>
     </Section>
@@ -66,11 +67,6 @@ const WorthyBrand = () => {
 
 
 export default WorthyBrand
-
-const Section = styled.section`
-  padding:0 20%;
-  margin-bottom:100px;
-`
 
 const CategoryUl = styled.ul`
   text-align:center;
@@ -93,65 +89,20 @@ const Carousel = styled.div`
   background-color: rgb(200, 233, 253);
 `
 
-
 const ProductContent = styled.div`
   display:flex;
   padding:10px;
 `
 
-const ProductDiv = styled.div`
+const NewProductDiv = styled(ProductDiv)`
   width:50%;
-  display:flex;
-  align-items:center;
-  cursor:pointer;
+  flex-direction: row;
+  justify-content: start;
   img{
     width:30%;
-    height:100%;
-    border:0.5px solid grey;
   }
 `
 
-const TextDiv =styled.div`
+export const TextDiv =styled.div`
   margin-left:10px;
-`
-const SubTitle = styled.p`
-  font-size:12px;
-  margin: 0 0 4px 0;
-`
-
-const PriceDiv = styled.div`
-  margin: 0 0px 4px 0;   
-`
-
-const TagPrice = styled.del`
-  font-size:12px;
-  margin:0 2px 0 0;
-
-`
-const DiscountPrice = styled.span`
-  font-size:16px;
-  color:red;
-`
-
-interface KeywordProps {
-  type:string
-}
-
-const Keyword = styled.span<KeywordProps>`
-  color:#fff;
-  font-size:12px;
-  border-radius:10px;
-  padding:1px 10px;
-  background-color:${props => {
-    switch(props.type) {
-      case "세일":
-        return `rgb(254, 101, 101)`;
-      case "쿠폰":
-        return `rgb(154, 236, 67)`;
-      case "증정":
-        return `rgb(121, 190, 243)`;
-      case "오늘드림":
-        return `rgb(255, 159, 218)`;
-    }
-  }}
 `

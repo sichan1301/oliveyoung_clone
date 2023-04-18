@@ -15,26 +15,25 @@ const Guide = () => {
 
           <ServiceCall>
             <Center>온라인물 고객센터</Center>
-            <CenterCall>1522 - 0882</CenterCall>
+            <CallNumber>1522 - 0882</CallNumber>
             <Center>매장 고객센터</Center>
-            <CenterCall>1577 - 4887</CenterCall>
+            <CallNumber>1577 - 4887</CallNumber>
           </ServiceCall>
 
           <QnATimeDiv>
             <QnATime>고객센터 운영시간 [평일 09:00 ~ 18:00]</QnATime>
             <QnAText>주말 및 공휴일은 1:1문의하기를 이용해주세요.<br />업무가 시작되면 바로 처리해드립니다.</QnAText>
             <ButtonDiv>
-              <QnAButton>1:1문의하기</QnAButton>
-              <QnAButton>자주하는 질문</QnAButton>
+              <QnALink><a href ="">1:1문의하기</a></QnALink>
+              <QnALink><a href ="">자주하는 질문</a></QnALink>
             </ButtonDiv>
           </QnATimeDiv>
         </ServiceCenter>
 
       </TextDiv>
 
-      <ImgDiv>
-        <Img src ={require('../../imgs/cost.jpg')} />
-      </ImgDiv>
+      <Img src ={require('../../imgs/cost.jpg')} />
+
     </Section>
   )
 }
@@ -56,10 +55,12 @@ const TextDiv = styled.div`
 // 공지사항
 const NoticeDiv =styled.div`
   display:flex;
+  justify-content:space-between;
   align-items:center;
   height:60px;
   border-bottom:0.5px solid rgb(150,150,150);
 `
+
 const News =styled.p`
   font-size:14px;
   margin: 0 60% 0 40px;
@@ -92,7 +93,7 @@ const Center = styled.p`
   margin: 0 0 4px 0;
 `
 
-const CenterCall = styled.p`
+const CallNumber = styled.p`
   font-size:28px;
   color:rgb(169, 199, 159);
   font-weight:600;
@@ -117,25 +118,22 @@ const ButtonDiv = styled.div`
   display:flex;
   justify-content:space-between;
 `
-const QnAButton = styled.button`
+
+
+const QnALink = styled.a`
+  text-align:center;
   width:48%;
   color:#fff;
   background-color:rgb(184, 182, 182);
   padding:20px;
-  border-radius:0;
   font-weight:600;
   font-size:16px;
-  border:none;
 `
 
 // 이미지
-const ImgDiv = styled.div`
+
+const Img = styled.img`
   width:30%;
   height:100%;
   margin-left:50px;
-`
-const Img = styled.img`
-  width:100%;
-  height:100%;
-
 `

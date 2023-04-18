@@ -83,7 +83,7 @@ const TextDiv = styled.div`
   margin: 0 0 60px 0;
  `
 
- const AnotherRecmmend = styled.button`
+ export const AnotherRecmmend = styled.button`
   display:block;
   width:300px;
   height:40px;

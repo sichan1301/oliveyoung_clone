@@ -15,7 +15,7 @@ const WeeklySpecial = () => {
 
 export default WeeklySpecial
 
-const Section = styled.section`
+export const Section = styled.section`
   padding:0 20%;
   margin-bottom:100px;
 `

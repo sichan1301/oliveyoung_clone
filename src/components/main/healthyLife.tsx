@@ -1,13 +1,14 @@
 import styled from "styled-components"
+import { Section } from "./weeklySpecial"
 
 const HealthyLife = () => {
   return(
     <Section>
       <h2>Helathy Life</h2>
       <ContentDiv>
-        <Content1></Content1>
-        <Content2></Content2>
-        <Content3></Content3>
+        <Content type="first" />
+        <Content type="second"/>
+        <Content type="third" />
       </ContentDiv>
     </Section>
   )
@@ -15,10 +16,6 @@ const HealthyLife = () => {
 
 export default HealthyLife
 
-const Section = styled.section`
-  padding:0 20%;
-  margin-bottom:100px;
-`
 
 const ContentDiv = styled.div`
   display:grid;
@@ -26,17 +23,21 @@ const ContentDiv = styled.div`
   grid-gap:20px;
 `
 
+interface ContentProps {
+  type:string
+}
 
-const Content1 = styled.div`
+const Content = styled.div<ContentProps>`
   height:400px;
   border-radius:20px;
-  background-color:rgb(255, 203, 203);
+  background-color:${props => {
+    switch(props.type) {
+      case "first":
+        return `rgb(255, 203, 203)`;
+      case "second":
+        return `rgb(190, 224, 255)`;
+      case "third":
+        return `rgb(161, 210, 168)`;
+    }
+  }}
 `
-
-const Content2 = styled(Content1)`
-  background-color:rgb(190, 224, 255);
-
-`
-const Content3 = styled(Content1)`
-  background-color:rgb(161, 210, 168);
-  `

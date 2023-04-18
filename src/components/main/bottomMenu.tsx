@@ -12,7 +12,9 @@ const BottomMenu = () => {
           <li><a href="">사이버 검사실</a></li>
           <li><a href="">고객센터</a></li>
         </Ul>
-        <Select></Select>
+        <Select>
+          <option value="">CJ그룹 계열사 바로가기</option>
+        </Select>
       </Content>
     </Article>
   )

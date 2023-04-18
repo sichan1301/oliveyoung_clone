@@ -2,10 +2,10 @@ import styled from "styled-components"
 
 const Product = () => {
   return (
-    <Container>
-      <img src = {require('../imgs/cost.jpg')} />
-      <Title>아토팜</Title>
-      <SubTitle>아토팜 세탁세제 1000ml</SubTitle>
+    <ProductDiv>
+      <img src = "/imgs/cost.jpg" />
+      <ProductTitle>아토팜</ProductTitle>
+      <ProductSubTitle>아토팜 세탁세제 1000ml</ProductSubTitle>
 
       <PriceDiv>
         <TagPrice>13,000원</TagPrice>
@@ -18,14 +18,14 @@ const Product = () => {
         <Keyword type="증정">증정</Keyword>
         <Keyword type="오늘드림">오늘드림</Keyword>
       </div>
-    </Container>
+    </ProductDiv>
   )
 }
 
 
 export default Product
 
-const Container = styled.div`
+export const ProductDiv = styled.div`
   width:100%;
   display:flex;
   flex-direction: column;
@@ -39,28 +39,28 @@ const Container = styled.div`
   }
 `
 
-const Title = styled.p`
+export const ProductTitle = styled.p`
   font-size:14px;
   font-weight:700;
   color:grey;
   margin: 4px 0;
 `
 
-const SubTitle = styled.p`
+export const ProductSubTitle = styled.p`
   font-size:12px;
   margin: 0 0 4px 0;
 `
 
-const PriceDiv = styled.div`
+export const PriceDiv = styled.div`
   margin: 0 0px 4px 0;   
 `
 
-const TagPrice = styled.del`
+export const TagPrice = styled.del`
   font-size:12px;
   margin:0 2px 0 0;
 
 `
-const DiscountPrice = styled.span`
+export const DiscountPrice = styled.span`
   font-size:16px;
   color:red;
 `
@@ -69,7 +69,7 @@ interface KeywordProps {
   type:string
 }
 
-const Keyword = styled.span<KeywordProps>`
+export const Keyword = styled.span<KeywordProps>`
   color:#fff;
   font-size:12px;
   border-radius:10px;

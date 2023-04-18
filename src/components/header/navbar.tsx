@@ -1,6 +1,4 @@
 import styled from "styled-components"
-import CategoryList from "./categoryList"
-
 
 const Navbar = () => {
   return(
@@ -17,7 +15,6 @@ const Navbar = () => {
         <li><a href="">멤버십/쿠폰</a></li>
         <li><a href="">이벤트</a></li>
       </Ul>
-      <CategoryList />
     </Navigation>
   )
 }
@@ -44,9 +41,13 @@ const Ul = styled.ul`
   li{
     font-weight:600;
     font-size:18px;
+    line-height:50px;
     text-align:center;
+    height:100%;
     :first-child{
-      width:130px;
+      width:200px;
+      border-left:0.5px solid rgb(190, 190, 190);
+      border-right:0.5px solid rgb(190, 190, 190);
     }
   }
 `
